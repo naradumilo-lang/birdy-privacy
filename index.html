@@ -61,6 +61,15 @@
       line-height: 1.7;
     }
 
+    .section p + p {
+      margin-top: 10px;
+    }
+
+    .section strong {
+      font-weight: 600;
+      color: #3d2b35;
+    }
+
     .section a {
       color: #c084a0;
       text-decoration: underline;
@@ -73,12 +82,12 @@
     <h1>privacy policy</h1>
   </header>
 
-  <p class="updated">Last updated: June 2026</p>
+  <p class="updated">Last updated: October 2026</p>
   <p class="lead">Your privacy is the foundation of Birdy.</p>
 
   <div class="section">
     <h2>Your data stays on your device</h2>
-    <p>Birdy stores all your data locally on your iPhone using AsyncStorage. Your cycle dates, phase information, and saved recipes never leave your device. We have no servers, no database, and no way to access your information.</p>
+    <p>Birdy stores all your data locally on your iPhone using AsyncStorage. Your saved recipes never leave your device. Your cycle dates and phase information stay there too, unless you choose to add them to your calendar (see below). We have no servers, no database, and no way to access your information.</p>
   </div>
 
   <div class="section">
@@ -102,8 +111,19 @@
   </div>
 
   <div class="section">
+    <h2>Calendar (optional)</h2>
+    <p>Birdy can add your logged and expected cycle to your calendar. This is off until you turn it on in Settings, under "Cycle in calendar".</p>
+    <p><strong>Access.</strong> When you turn it on, iOS asks for calendar access. Birdy needs full access so it can create and remove its own calendar. Birdy uses it to show your calendar accounts so you can pick one, to create its own calendar there, and to add, update and delete events in that calendar only. Birdy does not read events from your other calendars.</p>
+    <p><strong>What gets written.</strong> All-day events for your period days, and for your cycle phases if you choose that. By default every event is just called "Birdy", with no note. If you turn on descriptive titles, events say things like "Period" or "Period (estimate)". Expected dates also get a note saying they are estimates, not medical advice. The calendars are then named "Birdy Period", "Birdy Follicular", "Birdy Ovulation" and "Birdy Luteal" instead of "Birdy". If you turn on reminders, expected periods get a calendar alert at 9:00, one or two days before.</p>
+    <p><strong>Where the dates come from.</strong> From the period dates you enter in Birdy. They do not come from Apple Health, and Birdy does not write to Apple Health.</p>
+    <p><strong>Syncing.</strong> Birdy only writes to the calendar on your iPhone. Your iPhone then syncs it through the account you chose, such as iCloud, like any other calendar event. Birdy has no access to that account, sends nothing to a server, and cannot see where the calendar ends up. If you choose "On My iPhone", it stays on this device. If you share the Birdy calendar with someone, they can see everything in it.</p>
+    <p><strong>On your device.</strong> Birdy remembers which calendars it created, which account you chose and your settings for this feature.</p>
+    <p><strong>Removing it.</strong> Turn off "Show cycle in calendar" and Birdy deletes its calendars and every event in them. You can also delete the Birdy calendars in the Calendar app, or turn off Birdy's calendar access in iOS Settings. If you delete Birdy without turning this off first, the Birdy calendars stay in your Calendar app, and you can delete them there.</p>
+  </div>
+
+  <div class="section">
     <h2>Your data, always</h2>
-    <p>Because everything is stored locally, deleting the app deletes all your data. There is nothing to request, export, or delete from our side, because we never had it.</p>
+    <p>Because everything is stored locally, deleting the app deletes all your data, except calendars you asked Birdy to create (see Calendar above). There is nothing to request, export, or delete from our side, because we never had it.</p>
   </div>
 
   <div class="section">
